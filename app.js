@@ -6,19 +6,19 @@ app.controller("CatalogController", function($scope) {
     // criando o array de objetos que representa os produtos no catálogo
     $scope.products = [
         {
-            name: "Produto 1",
-            price: 19.99,
-            description: "Descrição do Produto 1"
+            name: "Televisão",
+            price: 1999.99,
+            description: "Televisão de 32 polegadas"
         },
         {
-            name: "Produto 2",
-            price: 29.99,
-            description: "Descrição do Produto 2"
+            name: "Geladeira",
+            price: 2999.99,
+            description: "Geladeira frost free"
         },
         {
-            name: "Produto 3",
-            price: 39.99,
-            description: "Descrição do Produto 3"
+            name: "Mesa de Jantar",
+            price: 899.99,
+            description: "Mesa de jantar com seis cadeiras"
         }
     ];
 
