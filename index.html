@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog App</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../angular-1.8.2/angular.js"></script>
     <script src="app.js"></script>
 </head>
 <body>
     <h1>Catalogo de Produtos</h1>
+    <ul>
+        <li ng-repeat="product in products">
+            <a ng-click="showProductDetails(product)">{{ product.name }}</a>
+        </li>
+    </ul>
+    <div ng-show="selectedProduct">
+        <h2>Detalhes do Produto</h2>
+        <p>Nome: {{ selectedProduct.name }}</p>
+        <p>Preço: {{ selectedProduct.price }}</p>
+        <p>Descrição: {{ selectedProduct.description }}</p>
+    </div>
 </body>
 </html>
